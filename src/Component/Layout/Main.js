@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link, Outlet, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Context/AuthProvider';
+import { FaBars } from 'react-icons/fa'
 
 const Main = () => {
     const { LogOut, user } = useContext(AuthContext)
@@ -11,12 +12,16 @@ const Main = () => {
     }
     return (
         <div className='mx-10 my-10'>
+            <div className=' w-8 lg:hidden'>
+                <label htmlFor="my-drawer-2" className="drawer-button lg:hidden"> <FaBars className='w-full text-2xl  cursor-pointer' /></label>
+
+            </div>
             <div className="drawer drawer-mobile">
                 <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content flex flex-col px-10">
                     {/* <!-- Page content here --> */}
                     <Outlet />
-                    <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">Open drawer</label>
+
 
                 </div>
                 <div className="drawer-side">

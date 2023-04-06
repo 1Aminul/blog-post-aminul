@@ -1,9 +1,17 @@
-1.First you will register as a reader or write, if you register as a reader, you will read the blog post but you cannot write any post.
-2.If you register as a writer you will read blog post and create any blog post.
+1.First you will register as a reader or write, if you register as a reader, you will read the blog post but you cannot write any post.\
+2.If you register as a writer you will read blog post and create any blog post.\
+3. As a Writer you will show your blog post and other blog post, you click the (see more) button you will go to the Post page, where you will show image, title, content, writer(image, name and time) and 2 buttons (edit, delete).\
+4.This blog is create by you, you will show the buttons,if this blog is create by other writer you will just show but cannot edit or delete.\
+5. Admin will create blog, edit and delete.Admin will edit or delete other blog also.\
 
-# Getting Started with Create React App
+# Live site Link
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[https://blog-post-aminul.netlify.app/]
+
+
+# server site Link
+
+[https://blog-server-jade.vercel.app/]
 
 ## Available Scripts
 

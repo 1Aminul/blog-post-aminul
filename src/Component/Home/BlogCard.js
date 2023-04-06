@@ -11,7 +11,7 @@ const BlogCard = ({ blog }) => {
         return doc.body.textContent
     }
     return (
-        <div className="card w-88 bg-base-100 shadow-xl">
+        <div className="card bg-base-100 shadow-xl">
             <figure><img className='w-full h-48' src={imgURL} alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title">{title}</h2>
