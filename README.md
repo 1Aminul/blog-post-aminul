@@ -1,3 +1,6 @@
+1.First you will register as a reader or write, if you register as a reader, you will read the blog post but you cannot write any post.
+2.If you register as a writer you will read blog post and create any blog post.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
