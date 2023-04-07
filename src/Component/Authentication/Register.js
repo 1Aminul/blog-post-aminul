@@ -42,7 +42,7 @@ const Register = () => {
 
             const users = (name, email, role, photoURL)=>{
                 const user = {name, email, role, photoURL};
-                fetch(`http://localhost:5000/user`, {
+                fetch(`https://blog-server-jade.vercel.app/user`, {
                     method: "POST",
                     headers: {
                         "content-type": "application/json"

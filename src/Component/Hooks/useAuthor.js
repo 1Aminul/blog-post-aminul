@@ -5,7 +5,7 @@ const useAuthor = (email) => {
     const [isAuthorLoading, setIsAuthorLoading] = useState(true);
     useEffect(() => {
         if (email) {
-            fetch(`http://localhost:5000/user/${email}`)
+            fetch(`https://blog-server-jade.vercel.app/user/${email}`)
                 .then(res => res.json())
                 .then(data => {
                     console.log(data);

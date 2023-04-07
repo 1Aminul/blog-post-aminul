@@ -46,7 +46,7 @@ const AuthProvider = ({children}) => {
     const {data: users = []} = useQuery({
         queryKey: ["users"],
         queryFn: async ()=>{
-            const res = await fetch(`http://localhost:5000/user`);
+            const res = await fetch(`https://blog-server-jade.vercel.app/user`);
             const data = await res.json();
             return data;
         }

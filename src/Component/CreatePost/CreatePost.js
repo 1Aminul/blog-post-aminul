@@ -65,7 +65,7 @@ const CreatePost = () => {
                     time
 
                 }
-                fetch(`http://localhost:5000/blog`, {
+                fetch(`https://blog-server-jade.vercel.app/blog`, {
                     method: "POST",
                     headers: {
                         "content-type": "application/json"
@@ -87,7 +87,7 @@ const CreatePost = () => {
             content,
             time
         }
-        fetch(`http://localhost:5000/blog/${id}`, {
+        fetch(`https://blog-server-jade.vercel.app/blog/${id}`, {
             method: "PUT",
             headers: {
                 "content-type": "application/json"

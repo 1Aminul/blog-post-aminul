@@ -19,7 +19,7 @@ const PostPage = () => {
     }
 
     const deleteBlog = (id)=>{
-        fetch(`http://localhost:5000/blog/${id}`, {
+        fetch(`https://blog-server-jade.vercel.app/blog/${id}`, {
             method: "DELETE",
             headers: {
                 "content-type": "application/json"

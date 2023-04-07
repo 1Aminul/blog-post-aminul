@@ -16,7 +16,7 @@ export const router = createBrowserRouter([
         {
             path: '/postpage/:id',
             element: <PostPage></PostPage>,
-            loader: ({params})=> fetch(`http://localhost:5000/blog/${params.id}`)
+            loader: ({params})=> fetch(`https://blog-server-jade.vercel.app/blog/${params.id}`)
         },
         {
             path: '/login',
@@ -33,7 +33,7 @@ export const router = createBrowserRouter([
         {
             path: '/edit/:id',
             element: <CreatePost></CreatePost>,
-            loader: ({params})=> fetch(`http://localhost:5000/blog/${params.id}`)
+            loader: ({params})=> fetch(`https://blog-server-jade.vercel.app/blog/${params.id}`)
         }
     ]}
 ])

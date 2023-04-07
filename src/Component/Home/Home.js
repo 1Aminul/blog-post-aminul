@@ -11,7 +11,7 @@ const Home = () => {
     const { data: blogs = [] } = useQuery({
         queryKey: ["blogs"],
         queryFn: async () => {
-            const res = await fetch(`http://localhost:5000/blog`)
+            const res = await fetch(`https://blog-server-jade.vercel.app/blog`)
             const data = await res.json()
             return data;
         }
